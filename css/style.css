@@ -252,10 +252,12 @@ body {
 .after-header-image-block {
     width: 100%;
     position: relative;
+    border: 1px solid red;
 }
 
 .after-header-image {
     width: 100%;
+    height: auto;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -321,41 +323,26 @@ body {
     }
 }
 
-@media(max-width: 575px) {
+@media(max-width: 580px) {
+    .after-header-title {
+        font-size: 6em;
+    }
+}
+
+@media(max-width: 440px) {
     .after-header-title {
         font-size: 5em;
-        bottom: 100px;
-    }
-    .after-header-button-block {
-        top: -50px;
     }
 }
 
-@media(max-width: 475px) {
-    .after-header-button-block {
-        top: -80px;
-    }
-}
-
-
-@media(max-width: 395px) {
+@media(max-width: 370px) {
     .after-header-title {
         font-size: 3.5em;
-        bottom: 150px;
     }
-    .after-header-button-block {
-        top: -100px;
-    }
-}
-
-@media(max-width: 355px) {
-
-    .after-header-button-block {
-        top: -150px;
+    .after-header-block {
+        row-gap: 20px;
     }
 }
-
-
 /*
 *****************************************************************************************************************************************************************************************************************************************************
 ***FOOTER*******************************************************************************************************************************************************************************************************************************************************************************************************************************
