@@ -1,0 +1,504 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+/*
+*****************************************************************************************************************************************************************************************************************************************************
+***CONTENT******************************************************************************************************************************************************************************************************************************************************************************************************************************
+*/
+
+body {
+    font-family: "SF Pro Display", sans-serif;
+    min-width: 270px;
+}
+
+/*
+*****************************************************************************************************************************************************************************************************************************************************
+***HEADER*******************************************************************************************************************************************************************************************************************************************************************************************************************************
+*/
+
+.header {
+    width: 100%;
+    background-color: #000;
+    padding: 22px 0;
+}
+
+.menu-block {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img .apple-img {
+    margin-right: 20px;
+}
+
+.menu-list ul {
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.menu-list ul li a {
+    color: #8f8f8f;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.1s ease-in 0s;
+}
+
+.menu-list ul li a:hover {
+    color: #fff;
+}
+
+.menu-svg {
+    margin-top: 5px;
+    width: 22px;
+    height: 22px;
+    fill: #acacac;
+    transition: all 0.1s ease-in 0s;
+}
+
+.menu-svg:hover {
+    fill: #fff;
+}
+
+.menu-burger {
+    display: none;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in 0s;
+}
+
+.menu-burger::before,
+.menu-burger::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #acacac;
+    position: absolute;
+    left: 0;
+}
+
+.menu-burger::before {
+    top: 0;
+}
+
+.menu-burger::after {
+    bottom: 0px;
+}
+
+.menu-burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #acacac;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.menu-burger:hover {
+    opacity: 0.5;
+}
+
+.menu-desktop-hide {
+    display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .menu-burger {
+        display: inline-block;
+    }
+
+    .menu-desktop-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-list ul {
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .menu-block {
+        padding: 0 20px;
+    }
+}
+
+/***************************************************************************/
+
+.header-bottom-block {
+    max-width: 1200px;
+    background-color: #000;
+    margin: 25px auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.header-title {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.header-button-block {
+    display: flex;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.header-btn {
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #8f8f8f;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.1s ease-in 0s;
+}
+
+.header-buy {
+    color: #fff;
+    background-color: #007dea;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.header-btn:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 650px) {
+    .header-bottom-block {
+        justify-content: center;
+    }
+
+    .header-title {
+        text-align: center;
+        flex: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*
+******************************************************************************************************************************************************************************************************************************************************
+***AFTER HEADER*******************************************************************
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+*/
+
+.after-header-container {
+    width: 100%;
+    background-color: #000;
+    padding: 50px 0;
+}
+
+.after-header-block {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    row-gap: 50px;
+}
+
+.after-header-image-block {
+    max-width: 500px;
+}
+
+.after-header-image {
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.after-header-title {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%, 0%);
+    z-index: 999;
+    font-size: 10em;
+    font-weight: bold;
+    width: 90%;
+    color: #fff;
+    text-shadow: 1px 2px 3px #000;
+    text-align: center;
+}
+
+.after-header-button-block {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.after-header-button-item {
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.after-header-button-item:hover {
+    color: #acacac;
+    border: 1px solid #8f8f8f;
+}
+
+@media (max-width: 1000px) {
+    .after-header-title {
+        font-size: 8em;
+        bottom: 150px;
+        line-height: 90%;
+    }
+    .after-header-image-block {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .after-header-title {
+        font-size: 5em;
+        bottom: 150px;
+    }
+
+    .after-header-button-block {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .after-header-title {
+        font-size: 5em;
+        bottom: 150px;
+    }
+
+    .after-header-button-block {
+        margin-top: -50px;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .after-header-title {
+        font-size: 5em;
+        bottom: 220px;
+    }
+
+    .after-header-button-block {
+        margin-top: -50px;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .after-header-title {
+        font-size: 4em;
+        bottom: 180px;
+    }
+
+    .after-header-button-block {
+        margin-top: -150px;
+        row-gap: 10px;
+    }
+}
+
+/*
+*****************************************************************************************************************************************************************************************************************************************************
+***FOOTER*******************************************************************************************************************************************************************************************************************************************************************************************************************************
+*/
+
+.footer-block {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 90px 0;
+}
+
+.footer-content {
+    padding: 0px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.apple-image-block {
+    flex: 1;
+}
+
+.apple-img {
+    height: 45px;
+    cursor: pointer;
+    fill: #ccd0d2;
+    transition: all 0.1s ease-in 0s;
+}
+
+.apple-img:hover {
+    fill: #fff;
+    height: 47px;
+    margin: -1px;
+}
+
+.footer-text {
+    text-align: center;
+    flex: 2;
+}
+
+.social-media-block {
+    flex: 1;
+    text-align: right;
+}
+
+.social-media-block ul {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.social-media-block ul li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    fill: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease-in 0s;
+}
+
+.social-svg {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media-block ul li a:hover {
+    background-color: #000;
+    fill: #fff;
+}
+
+/*
+********************************************************************************************************************************************************************
+***MEDIA FOOTER*******************************************************************
+**********************************************************************************
+**********************************************************************************
+*/
+
+@media (max-width: 1030px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .social-media-block {
+        order: 1;
+        flex: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .apple-image-block {
+        order: 2;
+        text-align: right;
+        flex: 0 1 auto;
+        margin-right: 20px;
+    }
+
+    .footer-text {
+        text-align: left;
+        order: 3;
+        flex: 0 0 320px;
+    }
+}
+
+@media (max-width: 500px) {
+    .apple-image-block {
+        order: 2;
+        text-align: right;
+        flex: 1 1 auto;
+        margin-right: 20px;
+    }
+
+    .footer-text {
+        text-align: left;
+        order: 3;
+        flex: 1 1 70%;
+    }
+}
+
+@media (max-width: 350px) {
+    .apple-image-block {
+        order: 2;
+        text-align: right;
+        flex: 1 1 auto;
+        margin-right: 20px;
+    }
+
+    .footer-text {
+        text-align: left;
+        order: 3;
+        flex: 1 1 58%;
+    }
+}
