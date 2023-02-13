@@ -264,7 +264,7 @@ body {
     user-select: none;
 }
 
-.after-header-title {  
+.after-header-title {
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -307,7 +307,7 @@ body {
     border: 1px solid #8f8f8f;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
     .after-header-title {
         line-height: 90%;
         width: auto;
@@ -318,25 +318,25 @@ body {
     }
 }
 
-@media(max-width: 720px) {
+@media (max-width: 720px) {
     .after-header-title {
         font-size: 8em;
     }
 }
 
-@media(max-width: 580px) {
+@media (max-width: 580px) {
     .after-header-title {
         font-size: 6em;
     }
 }
 
-@media(max-width: 440px) {
+@media (max-width: 440px) {
     .after-header-title {
         font-size: 5em;
     }
 }
 
-@media(max-width: 370px) {
+@media (max-width: 370px) {
     .after-header-title {
         font-size: 3.5em;
     }
@@ -344,7 +344,6 @@ body {
         row-gap: 20px;
     }
 }
-
 
 /*
 ******************************************************************************************************************************************************************************************************************************************************
@@ -427,7 +426,7 @@ body {
     z-index: 999;
 }
 
-@media(max-width: 1130px) {
+@media (max-width: 1130px) {
     .comfort-content-block {
         flex-direction: column;
         row-gap: 50px;
@@ -442,7 +441,7 @@ body {
     }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .comfort-block-text {
         width: 100%;
     }
@@ -452,31 +451,28 @@ body {
     }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .left-pod,
     .right-pod {
         max-width: 200px;
     }
-
 }
 
-@media(max-width: 350px) {
+@media (max-width: 350px) {
     .left-pod,
     .right-pod {
         max-width: 150px;
     }
-
 }
 
-
-@media(max-width: 730px) {
+@media (max-width: 730px) {
     .magic-title,
     .comfort-title {
         font-size: 50px;
     }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .magic-title,
     .comfort-title {
         font-size: 30px;
@@ -487,7 +483,7 @@ body {
     }
 }
 
-@media(max-width: 338px) {
+@media (max-width: 338px) {
     .magic-title,
     .comfort-title {
         font-size: 25px;
@@ -555,7 +551,7 @@ body {
     height: 100%;
 }
 
-@media(max-width: 1015px) {
+@media (max-width: 1015px) {
     .everything-block {
         flex-direction: column;
         align-items: center;
@@ -567,18 +563,17 @@ body {
     }
 }
 
-@media(max-width: 470px) {
+@media (max-width: 470px) {
     .everything-text-bl {
         font-size: 15px;
     }
 }
 
-@media(max-width: 370px) {
+@media (max-width: 370px) {
     .everything-text-bl {
         font-size: 10px;
     }
 }
-
 
 /*
 *****************************************************************************************************************************************************************************************************************************************************
@@ -624,7 +619,7 @@ body {
     z-index: 999;
 }
 
-@media(max-width: 1130px) {
+@media (max-width: 1130px) {
     .sizes-content-block {
         flex-direction: column;
         row-gap: 50px;
@@ -639,7 +634,7 @@ body {
     }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .sizes-block-text {
         width: 100%;
     }
@@ -649,7 +644,7 @@ body {
     }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .left-pod,
     .right-pod {
         max-width: 200px;
@@ -658,17 +653,134 @@ body {
     .sizes-container {
         padding: 150px 0;
     }
-
 }
 
-@media(max-width: 350px) {
+@media (max-width: 350px) {
     .left-pod,
     .right-pod {
         max-width: 150px;
     }
-
 }
 
+/*
+*****************************************************************************************************************************************************************************************************************************************************
+***NOISE*******************************************************************************************************************************************************************************************************************************************************************************************************************************
+*/
+
+.cut-noise {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.cut-noise-text-block {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cut-noise-text-block h6 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.cut-noise-text-block h2 {
+    margin-top: 0.6em;
+    font-size: 4em;
+}
+
+@media (max-width: 730px) {
+    .cut-noise-text-block {
+        font-size: 15px;
+    }
+    .cut-noise-text-block h6 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .cut-noise-text-block {
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 338px) {
+    .cut-noise-text-block {
+        font-size: 7px;
+    }
+}
+
+.cut-noise-maincontent-block {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 200px auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cut-noise-maincontent-image {
+    max-width: 1100px;
+    flex: 100%;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.cut-noise-maincontent-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.cut-noise-maincontent-first-text,
+.cut-noise-maincontent-second-text {
+    font-size: 1.5em;
+    max-width: 17em;
+}
+
+.cut-noise-maincontent-first-text {
+    margin-left: -50px;
+}
+
+.cut-noise-maincontent-second-text {
+    margin-top: 60px;
+    margin-right: -50px;
+}
+
+.final-noise-text {
+    margin: 50px auto;
+    max-width: 450px;
+    padding: 0 50px;
+    font-size: 26px;
+}
+
+@media(max-width: 1000px) {
+    .cut-noise-maincontent-block {
+        flex-direction: column;
+    }
+    .cut-noise-maincontent-first-text {
+        margin-left: 10px;
+    }
+    .cut-noise-maincontent-second-text {
+        order: 1;
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .cut-noise-maincontent-block {
+        margin-top: 100px;
+    }
+
+}
 
 /*
 *****************************************************************************************************************************************************************************************************************************************************
