@@ -1200,7 +1200,7 @@ body {
     width: 100%;
     background-color: #000;
     color: #fff;
-    padding: 200px 0;
+    padding: 200px 0 0 0;
 }
 
 .buy-content-block{
@@ -1285,6 +1285,260 @@ body {
 
 /*
 *******************************************************************************************************************************************************************/
+
+.goods-block {
+    width: 100%;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-end;
+    column-gap: 50px;
+    row-gap: 100px;
+}
+
+.goods-item-bloc {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    font-size: 26px;
+    align-items: center;
+}
+
+.goods-image {
+    width: 100%;
+}
+
+.goods-image img {
+    width: 100%;
+    height: auto;
+}
+
+.goods-item-bloc h6 {
+    font-size: 1.2em;
+}
+
+.goods-item-bloc p {
+    font-size: 0.8em;
+}
+
+.goods-item-bloc span {
+    margin-top: 30px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.goods-btn {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    width: fit-content;
+    padding: 20px 15px;
+    font-size: 26px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 60px;
+    border-radius: 15px;
+    transition: all 0.1s ease-in 0s;
+}
+
+.goods-btn:hover {
+    opacity: 0.8;
+}
+
+.goods-item-bloc a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.1s ease-in 0s;
+}
+
+.goods-item-bloc a:hover {
+    opacity: 0.7;
+}
+
+@media(max-width: 1100px) {
+    .goods-item-bloc {
+        flex: 0 1 40%;
+    }   
+    .goods-item-bloc:nth-child(2) {
+        order: 1;
+    }
+}
+
+@media(max-width: 550px) {
+    .goods-item-bloc {
+        flex: 0 1 90%;
+    }  
+
+    .goods-block {
+        row-gap: 70px;
+    }
+}
+
+
+.goods-last-text {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 200px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.goods-last-text h2 {
+    width: 100%;
+    font-size: 4em;
+}
+
+@media (max-width: 730px) {
+    .goods-last-text {
+        font-size: 15px;
+    }
+
+    .goods-last-text {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .goods-last-text {
+        font-size: 10px;
+    }
+    .goods-last-text h6 {
+        font-size: 3em;
+    }
+    
+}
+
+@media (max-width: 338px) {
+    .goods-last-text {
+        font-size: 7px;
+    }
+}
+
+/*
+***************************************************************************************************************************************************************************************************************************************************
+***CallBACK CONTAINER*******************
+*/
+
+.callback-container {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 30px 0;
+}
+
+.callback-title {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.callback-title h2 {
+    font-size: 4em;
+}
+
+@media (max-width: 730px) {
+    .callback-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .callback-title {
+        font-size: 10px;
+    }    
+}
+
+@media (max-width: 338px) {
+    .callback-title {
+        font-size: 7px;
+    }
+}
+
+.callback-form-block {
+    max-width: 560px;
+    padding: 0 50px;
+    margin: 200px auto;
+    margin-bottom: 0px;
+}
+
+.callback-form {
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.name {
+    flex: 0 1 450px;
+    position: relative;
+    left: -20px;
+}
+
+.name input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid #8f8f8f;
+    outline: none;
+    font-size: 1em;
+}
+
+.phone {
+    flex: 0 1 450px;
+    position: relative;
+    left: -20px;
+}
+
+.phone input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid #8f8f8f;
+    outline: none;
+    font-size: 1em;
+}
+
+.callback-button {
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 40px; 
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 50px;
+    transition: all 0.1s ease-in 0s;
+    cursor: pointer;
+}
+
+.callback-button:hover {
+    opacity: 0.7;
+}
+
+@media(max-width: 500px) {
+    .callback-form {
+        font-size: 15px;
+    }
+    .callback-form-block {
+        margin-top: 100px;
+    }
+
+}
+
 
 
 
