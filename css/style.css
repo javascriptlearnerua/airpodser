@@ -34,6 +34,7 @@ body {
 body {
     font-family: "SF Pro Display", sans-serif;
     min-width: 270px;
+    background-color: #000;
 }
 
 /*
@@ -343,6 +344,240 @@ body {
         row-gap: 20px;
     }
 }
+
+
+/*
+******************************************************************************************************************************************************************************************************************************************************
+***MAGIC *******************************************************************
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+*/
+
+.magic-comfort-container {
+    width: 100%;
+    padding: 80px 0 220px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.magic-block {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.magic-title {
+    font-size: 80px;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+.magic-image-block {
+    max-width: 1100px;
+    padding: 0 50px;
+    margin: 120px auto;
+}
+
+.magic-image-block img {
+    width: 100%;
+    user-select: none;
+}
+
+/*******************************************************************************
+*/
+
+.comfort-block {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+.comfort-title {
+    max-width: 1100px;
+    padding: 0 50px;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+}
+
+.comfort-content-block {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-pod,
+.right-pod {
+    max-width: 450px;
+    height: auto;
+    user-select: none;
+}
+
+.comfort-block-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 450px;
+    font-size: 26px;
+    font-weight: 100;
+    z-index: 999;
+}
+
+@media(max-width: 1130px) {
+    .comfort-content-block {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .comfort-block-text {
+        position: relative;
+        bottom: 0;
+    }
+
+    .right-pod {
+        align-self: flex-end;
+    }
+}
+
+@media(max-width: 600px) {
+    .comfort-block-text {
+        width: 100%;
+    }
+    .left-pod,
+    .right-pod {
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 500px) {
+    .left-pod,
+    .right-pod {
+        max-width: 200px;
+    }
+
+}
+
+@media(max-width: 350px) {
+    .left-pod,
+    .right-pod {
+        max-width: 150px;
+    }
+
+}
+
+
+@media(max-width: 730px) {
+    .magic-title,
+    .comfort-title {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .magic-title,
+    .comfort-title {
+        font-size: 30px;
+    }
+
+    .magic-image-block {
+        margin: 70px auto;
+    }
+}
+
+@media(max-width: 338px) {
+    .magic-title,
+    .comfort-title {
+        font-size: 25px;
+    }
+
+    .magic-image-block {
+        margin: 50px auto;
+    }
+}
+
+/*
+******************************************************************************************************************************************************************************************************************************************************
+***EVERYTHING YOU HEAR************************************************************
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+*/
+
+.everything-you-hear {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 70px 0 0 0;
+    position: relative;
+}
+
+.everything-block {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -1px;
+}
+
+.everything-text-bl {
+    font-size: 20px;
+    flex: 6;
+    margin-top: -50px;
+}
+
+.everything-text-bl h6 {
+    font-size: 1.1em;
+}
+
+.everything-text-bl h2 {
+    margin-top: 50px;
+    font-size: 3.7em;
+    line-height: 100%;
+}
+
+.everything-img {
+    flex: 4;
+    max-width: 500px;
+    position: relative;
+    top: 4px;
+}
+
+.everything-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1015px) {
+    .everything-block {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .everything-text-bl {
+        flex: 1;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 470px) {
+    .everything-text-bl {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 370px) {
+    .everything-text-bl {
+        font-size: 10px;
+    }
+}
+
 /*
 *****************************************************************************************************************************************************************************************************************************************************
 ***FOOTER*******************************************************************************************************************************************************************************************************************************************************************************************************************************
