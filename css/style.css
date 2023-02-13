@@ -1088,6 +1088,7 @@ body.over-off {
     margin-top: 100px;
     margin-bottom: -50px;
     position: relative;
+    user-select: none;
 }
 
 .bass-micro-img img {
@@ -1207,6 +1208,7 @@ body.over-off {
 *******************************************************************************/
 .back-img {
     width: 100%;
+    user-select: none;
 }
 
 .back-img img {
@@ -1372,6 +1374,7 @@ body.over-off {
 
 .goods-image {
     width: 100%;
+    user-select: none;
 }
 
 .goods-image img {
