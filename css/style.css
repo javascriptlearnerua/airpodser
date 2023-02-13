@@ -506,7 +506,7 @@ body {
 **********************************************************************************
 */
 
-.everything-you-hear {
+.everything-you-hear-container {
     width: 100%;
     border-radius: 15px;
     background-color: #f2f2f2;
@@ -547,6 +547,7 @@ body {
     max-width: 500px;
     position: relative;
     top: 4px;
+    user-select: none;
 }
 
 .everything-img img {
@@ -577,6 +578,97 @@ body {
         font-size: 10px;
     }
 }
+
+
+/*
+*****************************************************************************************************************************************************************************************************************************************************
+***SIZES*******************************************************************************************************************************************************************************************************************************************************************************************************************************
+*/
+
+.sizes-container {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 300px 0;
+}
+
+.sizes-block {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+.sizes-content-block {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-pod,
+.right-pod {
+    max-width: 450px;
+    height: auto;
+    user-select: none;
+}
+
+.sizes-block-text {
+    position: absolute;
+    bottom: -220px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 450px;
+    font-size: 26px;
+    font-weight: 100;
+    z-index: 999;
+}
+
+@media(max-width: 1130px) {
+    .sizes-content-block {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .sizes-block-text {
+        position: relative;
+        bottom: 0;
+    }
+
+    .right-pod {
+        align-self: flex-end;
+    }
+}
+
+@media(max-width: 600px) {
+    .sizes-block-text {
+        width: 100%;
+    }
+    .left-pod,
+    .right-pod {
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 500px) {
+    .left-pod,
+    .right-pod {
+        max-width: 200px;
+    }
+
+    .sizes-container {
+        padding: 150px 0;
+    }
+
+}
+
+@media(max-width: 350px) {
+    .left-pod,
+    .right-pod {
+        max-width: 150px;
+    }
+
+}
+
 
 /*
 *****************************************************************************************************************************************************************************************************************************************************
