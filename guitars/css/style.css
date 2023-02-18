@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+
+@font-face {
+    font-family: CalSans;
+    font-display: swap;
+    src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/CalSans-SemiBold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+body {
+    font-family: Poppins;
+    min-width: 280px;
+}
+
+h1,
+h2 {
+    font-family: CalSans;
+}
+
+._container {
+    margin: auto;
+    max-width: 1260px;
+    padding: 0 30px;
+    position: relative;
+}
+
+/*
+******************************************************************
+******************************************************************
+HEADER************************************************************
+******************************************************************
+******************************************************************
+*/
+
+.header {
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 131px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.header__logo a {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    justify-content: space-around;
+}
+
+.header__logo svg {
+    width: 28px;
+    height: 28px;
+}
+
+.header__logo a:hover path {
+    fill: #ff652870;
+}
+
+.header__logo a:hover h2 {
+    color: #12121298;
+}
+
+.header__logo a h2 {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #121212;
+}
+
+/*********************************************/
+
+.header__nav {
+}
+
+.header__list {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 56px;
+}
+
+.header__list a {
+    color: rgba(18, 18, 18, 0.4);
+    transition: all 0.3s ease-in 0s;
+}
+
+.header__list a:hover {
+    text-decoration: underline;
+}
+
+/*
+******************************************************************
+******************************************************************
+MAIN PAGE************************************************************
+******************************************************************
+******************************************************************
+*/
+
+.page__main {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.main__container {
+    display: flex;
+}
+
+.main__text {
+    flex: 0 1 50%;
+    align-self: flex-end;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+}
+
+.main__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    color: #121212;
+}
+
+.main__title span {
+    color: #ff6428;
+}
+
+.main__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+    color: #666666;
+    margin-top: 16px;
+}
+
+.main__bottom {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.main__button {
+    background: #ff6428;
+    border-radius: 40px;
+    padding: 18px 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.main__button:hover {
+    background: #f8682fe7;
+}
+
+.main__svg,
+.main__svg_1 {
+    width: 27px;
+    height: 30px;
+}
+
+.main__svg_1 {
+    margin-left: 40px;
+    margin-right: 28px;
+}
+
+.main__decor {
+    flex: 0 1 50%;
+}
+
+.main__image {
+    /* display: inline-block; */
+    position: relative;
+    margin-right: -135px;
+    max-width: 672px;
+    padding-bottom: 97.6%;
+}
+
+.main__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 0 0 160px 375px;
+}
+
+.main__image::after {
+    content: "";
+    background: url("../img/decor.svg") 0 0 no-repeat;
+    width: 80px;
+    height: 80px;
+    right: 36.3%;
+    bottom: 0;
+    transform: translate(0, 50%);
+    position: absolute;
+}
+
+@media (max-width: 1200px) {
+    .main__text {
+        flex: 0 0 60%;
+        padding-bottom: 0;
+    }
+
+    .main__decor {
+        flex: 0 1 35%;
+    }
+
+    .header__container {
+        gap: 40px;
+    }
+
+    .header__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__text {
+        flex: 1 1 100%;
+        padding-right: 0;
+        padding-top: 130px;
+    }
+
+    .main__decor {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__text {
+        flex: 1 1 100%;
+        padding-right: 0;
+        padding-top: 100px;
+    }
+
+    .header__logo h2 {
+        display: none;
+    }
+
+    .header__list {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .header__container {
+        gap: 20px;
+    }
+
+    .main__bottom {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main__svg_1 {
+        margin-left: 30px;
+    }
+
+    .main__title {
+        font-size: 50px;
+    }
+
+    .header__container {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+}
+
+/*
+******************************************************************
+******************************************************************
+FEATURED WORKS****************************************************
+******************************************************************
+******************************************************************
+*/
+
+/*
+******************************************************************
+******************************************************************
+BLOG************************************************************
+******************************************************************
+******************************************************************
+*/
+
+/*
+******************************************************************
+******************************************************************
+FOOTER************************************************************
+******************************************************************
+******************************************************************
+*/
