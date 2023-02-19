@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="css/default.css" />
         <link rel="stylesheet" href="css/style.css" />
 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+
         <title>Rhythm-my</title>
     </head>
     <body>
@@ -476,11 +481,47 @@
                             </div>
                         </div>
                     </section>
+
+                    <section class="page__review">
+                        <div class="review__container _container">
+                            <h2 class="review__title">
+                                What our <span>customer’s</span> say
+                            </h2>
+                            <div class="review__block">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                        ...
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </main>
             </div>
 
             <footer class="footer"></footer>
         </div>
-        <script src="js/mobile-menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+                // Optional parameters
+                direction: "horizontal",
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
     </body>
 </html>
